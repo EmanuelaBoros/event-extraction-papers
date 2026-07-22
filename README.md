@@ -1,25 +1,51 @@
 # Event Extraction Papers
 
-A curated collection of research on Event Extraction (EE), including
-event detection, event argument extraction, document-level extraction,
-generative and LLM-based methods, multilingual and multimodal EE,
-event coreference, datasets, benchmarks, and related resources.
+A curated bibliography of research on **Event Extraction (EE)** and closely related event-centric Natural Language Processing tasks.
+
+The collection covers the evolution of the field from pattern- and rule-based information extraction to statistical and neural models, document-level extraction, generative approaches, large language models (LLMs), multilingual and multimodal extraction, event coreference, and event structure induction.
+
+> **Last major update:** July 2026  
+> **Scope:** Event detection, event argument extraction, end-to-end event extraction, document- and cross-document event extraction, multilingual/cross-lingual EE, multimodal EE, event coreference, event-event relations, event schemas, datasets, benchmarks, and tools.  
+> This is a **curated rather than exhaustive** list.
+
+## Task abbreviations
+
+| Tag | Meaning |
+|---|---|
+| `ED` | Event Detection / trigger identification and classification |
+| `EAE` | Event Argument Extraction |
+| `EE` | End-to-end or general Event Extraction |
+| `DEE` | Document-level Event Extraction |
+| `CDEE` | Cross-document / multi-document Event Extraction |
+| `ECR` | Event Coreference Resolution |
+| `MEE` | Multimodal / Multimedia Event Extraction |
+| `OpenEE` | Open-domain or open-schema Event Extraction |
+| `LLM` | Large Language Model-based approach |
+
+Research papers are listed under **one primary methodological category**. Cross-cutting properties are represented with tags. A paper may additionally be referenced in **Datasets**, **Tools**, or **Surveys/Evaluation** when it introduces a resource.
+
+---
 
 ## Table of Contents
 
-- [Foundations: Rules and Pattern Learning](#foundations-rules-and-pattern-learning)
-- [Statistical and Structured Learning](#statistical-and-structured-learning)
-- [Neural Event Extraction](#neural-event-extraction)
-- [Generative, Prompt-based and LLM Event Extraction](#generative-prompt-based-and-llm-event-extraction)
-- [Document-level and Multi-document Event Extraction](#document-level-and-multi-document-event-extraction)
-- [Few-shot, Zero-shot and Low-resource Event Extraction](#few-shot-zero-shot-and-low-resource-event-extraction)
-- [Multilingual and Cross-lingual Event Extraction](#multilingual-and-cross-lingual-event-extraction)
+- [Foundations: Pattern, Rule and Knowledge-Based Methods](#foundations-pattern-rule-and-knowledge-based-methods)
+- [Statistical and Structured Machine Learning](#statistical-and-structured-machine-learning)
+- [Neural and Pretrained Event Extraction](#neural-and-pretrained-event-extraction)
+- [Generative, Prompt-Based and LLM Event Extraction](#generative-prompt-based-and-llm-event-extraction)
+- [Few-Shot, Zero-Shot and Low-Resource Event Extraction](#few-shot-zero-shot-and-low-resource-event-extraction)
+- [Document-Level and Cross-Document Event Extraction](#document-level-and-cross-document-event-extraction)
+- [Multilingual and Cross-Lingual Event Extraction](#multilingual-and-cross-lingual-event-extraction)
 - [Multimodal Event Extraction](#multimodal-event-extraction)
-- [Open-domain Event Extraction and Schema Induction](#open-domain-event-extraction-and-schema-induction)
-- [Event Coreference and Event Relations](#event-coreference-and-event-relations)
-- [Surveys and Benchmarks](#surveys-and-benchmarks)
-- [Datasets](#datasets)
+- [Semi-Supervised, Weakly Supervised and Unsupervised Learning](#semi-supervised-weakly-supervised-and-unsupervised-learning)
+- [Open-Domain Event Extraction and Schema Induction](#open-domain-event-extraction-and-schema-induction)
+- [Event Coreference](#event-coreference)
+- [Event Relations, Temporal Structure and Causality](#event-relations-temporal-structure-and-causality)
+- [Surveys and Evaluation Studies](#surveys-and-evaluation-studies)
+- [Datasets and Benchmarks](#datasets-and-benchmarks)
 - [Tools and Repositories](#tools-and-repositories)
+- [Linguistic Foundations](#linguistic-foundations)
+- [Other Lists](#other-lists)
+- [Contributing](#contributing)
 
 ---
 
