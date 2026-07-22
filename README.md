@@ -50,10 +50,10 @@ Research papers are listed under **one primary methodological category**. Cross-
 ---
 
 
-## Pattern matching
+# Foundations: Pattern, Rule and Knowledge-Based Methods
 
 
-### 1993
+## 1993
 
 
 <details>
@@ -62,7 +62,7 @@ Research papers are listed under **one primary methodological category**. Cross-
 Knowledge-based natural language processing systems have achieved good success with certain tasks but they are often criticized because they depend on a domain-specific dictionary that requires a great deal of manual knowledge engineering. This knowledge engineering bottleneck makes knowledge-based NLP systems impractical for real-world applications because they cannot be easily scaled up orported to new domains. In response to this problem, we developed a system called AutoSlog that automatically builds a domain-specific dictionary of concepts for extracting information from text. Using AutoSlog. we constructed a dictionary for the domain of terrorist event descriptions in only 5 person-hours. We then compared the AutoSlog dictionary with a hand-crafted dictionary that was built by two highly skilled graduate students and required approximately 1500 person-hours of effort. We evaluated the two dictionaries using two blind test sets of 100 texts each. Overall, the AutoSlog dictionary achieved 98% of the performance of the hand-crafted dictionary. On the first test set, the Auto-Slog dictionary obtained 96.3% of the perfomlance of the hand-crafted dictionary. On the second test set, the overall scores were virtually indistinguishable with the AutoSlog dictionary achieving 99.7% of the performance of the handcrafted dictionary.
 </p></blockquote></details>
 
-### 1995
+## 1995
 
 
 <details>
@@ -83,21 +83,21 @@ Previous work on automated dictionary construction for information extraction ha
 A growing population of users want to extract a growing variety of information from on-line texts. Unfortunately, current information extraction systems typically require experts to hand-build dictionaries of extraction patterns for each new type of information to be extracted. This paper presents a system that can learn dictionaries of extraction patterns directly from user-provided examples of texts and events to be extracted from them. The system, called LIEP, learns patterns that recognize relationships between key constituents based on local syntax. Sets of patterns learned by LIEP for a sample extraction task perform nearly at the level of a hand-built dictionary of patterns.
 </p></blockquote></details>
 
-### 1998 
+## 1998 
 
 <details>
 <summary>1. <a href="https://www.semanticscholar.org/paper/Multistrategy-Learning-for-Information-Extraction-Freitag/29c99d263b5e05aae6bb96f004f025dcc9b5caae">Multistrategy Learning for Information Extraction</a> by<i> Dayne Freitag</i></summary><blockquote><p align="justify">
 Information extraction IE is the problem of lling out pre de ned structured sum maries from text documents We are in terested in performing IE in non traditional domains where much of the text is often ungrammatical such as electronic bulletin board posts and Web pages We suggest that the best approach is one that takes into ac count many di erent kinds of information and argue for the suitability of a multistrat egy approach We describe learners for IE drawn from three separate machine learning paradigms rote memorization term space text classi cation and relational rule induc tion By building regression models mapping from learner con dence to probability of cor rectness and combining probabilities appro priately it is possible to improve extraction accuracy over that achieved by any individ ual learner We describe three di erent mul tistrategy approaches Experiments on two IE domains a collection of electronic seminar announcements from a university computer science department and a set of newswire ar ticles describing corporate acquisitions from the Reuters collection demonstrate the effectiveness of all three approaches
 </p></blockquote></details>
 
-### 1999 
+## 1999 
 
 <details>
 <summary>1. <a href="https://www.researchgate.net/publication/221603776_Learning_Dictionaries_for_Information_Extraction_by_Multi-Level_Bootstrapping">Learning Dictionaries for Information Extraction by Multi-Level Bootstrapping</a> by<i> Ellen Riloff, Rosie Jones</i></summary><blockquote><p align="justify">
 Information extraction systems usually require two dictionaries: a semantic lexicon and a dictionary of extraction patterns for the domain. We present a multilevel bootstrapping algorithm that generates both the semantic lexicon and extraction patterns simultaneously. As input, our technique requires only unannotated training texts and a handful of seed words for a category. We use a mutual bootstrapping technique to alternately select the best extraction pattern for the category and bootstrap its extractions into the semantic lexicon, which is the basis for selecting the next extraction pattern. To make this approach more robust, we add a second level of bootstrapping (metabootstrapping) that retains only the most reliable lexicon entries produced by mutual bootstrapping and then restarts the process. We evaluated this multilevel bootstrapping technique on a collection of corporate web pages and a corpus of terrorism news articles. The algorithm produced high-quality dictionaries for several semantic categories.
 </p></blockquote></details>
 
-### 2000 
+## 2000 
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/A00-1011/">REES: A Large-Scale Relation and Event Extraction System</a> by<i> Chinatsu Aone, Mila Ramos-Santacruz</i></summary><blockquote><p align="justify">
@@ -109,7 +109,7 @@ This paper reports on a large-scale, end-to-end relation and event extraction sy
 In developing an Information Extraction (IE) system for a new class of events or relations, one of the major tasks is identifying the many ways in which these events or relations may be expressed in text. This has generally involved the manual analysis and, in some cases, the annotation of large quantities of text involving these events. This paper presents an alternative approach, based on an automatic discovery procedure, ExDisco, which identi es a set of relevant documents and a set of event patterns from un-annotated text, starting from a small set of seed patterns." We evaluate ExDisco by comparing the performance of discovered patterns against that of manually constructed systems on actual extraction tasks.
 </p></blockquote></details>
 
-### 2001 
+## 2001 
 
 
 
@@ -118,7 +118,7 @@ In developing an Information Extraction (IE) system for a new class of events or
 (LP)2 is a covering algorithm for adaptive Information Extraction from text (IE). It induces symbolic rules that insert SGML tags into texts by learning from examples found in a user-defined tagged corpus. Training is performed in two steps: initially a set of tagging rules is learned; then additional rules are induced to correct mistakes and imprecision in tagging. Induction is performed by bottom-up generalization of examples in the training corpus. Shallow knowledge about Natural Language Processing (NLP) is used in the generalization process. The algorithm has a considerable success story. From a scientific point of view, experiments report excellent results with respect to the current state of the art on two publicly available corpora. From an application point of view, a successful industrial IE tool has been based on (LP)2. Real world applications have been developed and licenses have been released to external companies for building other applications. This paper presents (LP)2, experimental results and applications, and discusses the role of shallow NLP in rule induction. 
 </p></blockquote></details>
 
-### 2002 
+## 2002 
 
 
 
@@ -127,7 +127,7 @@ In developing an Information Extraction (IE) system for a new class of events or
 Electronic information grows rapidly as the Internet is widely used in our daily life. In order to identify the exact information for the user query, information extraction is widely researched and investigated. The template, which pertains to events or situations, and contains slots that denote who did what to whom, when, and where, is predefined by a template builder. Therefore, fixed templates are the main obstacles for the information extraction system out of the laboratory. In this paper, a method to automatically discover the event pattern in Chinese from stock market bulletin is introduced. It is based on the tagged corpus and the domain model. The pattern discovery process is independent of the domain model by introducing a link table. The table is the connection between text surface structure and semantic deep structure represented by a domain model. The method can be easily adapted to other domains by changing the link table.
 </p></blockquote></details>
 
-### 2003 
+## 2003 
 
 
 <details>
@@ -147,7 +147,7 @@ Several approaches have been described for the automatic unsupervised acquisitio
 
 
 
-### 2005
+## 2005
 
 <details>
 <summary>1. <a href="https://www.aaai.org/Papers/Workshops/2006/WS-06-07/WS06-07-004.pdf">Automatic event and relation detection with seeds of varying complexity</a> by<i> Feiyu Xu, Hans Uszkoreit and Hong Li</i></summary><blockquote><p align="justify">
@@ -160,7 +160,7 @@ This paper presents a novel algorithm for the acquisition of Information Extract
 </p></blockquote></details>
 
 
-### 2008
+## 2008
 
 <details>
 <summary>1. <a href="https://link.springer.com/chapter/10.1007/978-3-540-69858-6_21">Real-Time News Event Extraction for Global Crisis Monitoring</a> by<i> Hristo Tanev, Jakub Piskorski, Martin Atkinson</i></summary><blockquote><p align="justify">
@@ -168,7 +168,7 @@ This paper presents a real-time news event extraction system developed by the Jo
 </p></blockquote></details>
 
 
-### 2009 
+## 2009 
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/W09-1405/">Biomedical event extraction without training data</a> by<i> Andreas Vlachos, Paula Buttery, Diarmuid Ó Séaghdha, Ted Briscoe </i></summary><blockquote><p align="justify">
@@ -181,7 +181,7 @@ We explore a rule-based methodology for the BioNLP'09 Shared Task on Event Extra
 </p></blockquote></details>
 
 
-### 2010 
+## 2010 
 
 <details>
 <summary>1. <a href="https://personal.eur.nl/frasincar/papers/IJWET2010/ijwet2010.pdf">Semi-Automatic Financial Events Discovery Based on Lexico-Semantic Patterns</a> by<i> Jethro Borsje, Frederik Hogenboom, Flavius Frasincar </i></summary><blockquote><p align="justify">
@@ -194,7 +194,7 @@ Several researchers have proposed semi-supervised learning methods for adapting 
 </p></blockquote></details>
 
 
-### 2011
+## 2011
 
 <details>
 <summary>1. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8640.2011.00401.x">Effective bio-event extraction using trigger words and syntactic dependencies</a> by<i> Halil Kilicoglu, Sabine Bergler
@@ -203,7 +203,7 @@ The scientific literature is the main source for comprehensive, up-to-date biolo
 </p></blockquote></details>
 
 
-### 2012 
+## 2012 
 
 <details>
 <summary>1. <a href="https://link.springer.com/chapter/10.1007%2F978-3-642-33185-5_10">Ontology-Based Information and Event Extraction for Business Intelligence</a> by<i> Ernest Arendarenko, Tuomo Kakkonen</i></summary><blockquote><p align="justify">
@@ -220,7 +220,7 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 Most event extraction systems are trained with supervised learning and rely on a collection of annotated documents. Due to the domain-specificity of this task, event extraction systems must be retrained with new annotated data for each domain. In this paper, we propose a bootstrapping solution for event role filler extraction that requires minimal human supervision. We aim to rapidly train a state-of-the-art event extraction system using a small set of "seed nouns" for each event role, a collection of relevant (in-domain) and irrelevant (out-of-domain) texts, and a semantic dictionary. The experimental results show that the bootstrapped system outperforms previous weakly supervised event extraction systems on the MUC-4 data set, and achieves performance levels comparable to supervised training with 700 manually annotated documents.
 </p></blockquote></details>
 
-### 2015  
+## 2015  
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/P15-4022/">A Domain-independent Rule-based Framework for Event Extraction</a> by<i> Marco A. Valenzuela-Escárcega, Gus Hahn-Powell, Mihai Surdeanu, Thomas Hicks</i></summary><blockquote><p align="justify">
@@ -237,7 +237,7 @@ Although several semi-supervised learning models have been proposed for English 
 Event Detection (ED), one aspect of Information Extraction, involves identifying instances of specified types of events in text. Much of the research on ED has been based on the specifications of the 2005 ACE [Automatic Content Extraction] event task 1 , and the associated annotated corpus. However, as the event instances in the ACE corpus are not evenly distributed, some frequent expressions involving ACE events do not appear in the training data, adversely affecting performance. In this paper, we demonstrate the effectiveness of a Pattern Expansion technique to import frequent patterns extracted from external corpora to boost ED performance. The experimental results show that our pattern-based system with the expanded patterns can achieve 70.4% (with 1.6% absolute improvement) F-measure over the baseline, an advance over current state-of-the-art systems.
 </p></blockquote></details>
 
-### 2018 
+## 2018 
 
 <details>
 <summary>1. <a href="https://pdfs.semanticscholar.org/dc04/f814fb210edf62a6237c52eb88ac98a5b732.pdf">Including new patterns to improve event extraction systems</a> by<i> Kai Cao,Xiang Li,Weicheng Ma,Ralph Grishman</i></summary><blockquote><p align="justify">
@@ -251,23 +251,28 @@ Due to today’s information overload, the user is particularly finding it diffi
 
 
 
-## Machine learning 
+# Statistical and Structured Machine Learning
 [:arrow_up:](#table-of-contents)
-### 2006 
+
+## 2002
+
+- [A Maximum Entropy Approach to Information Extraction from Semi-Structured and Free Text](https://www.aaai.org/Papers/AAAI/2002/AAAI02-118.pdf) — Hai Leong Chieu, Hwee Tou Ng. `IE`
+
+## 2006 
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/W06-0901/">The stages of event extraction</a> by<i> David Ahn</i></summary><blockquote><p align="justify">
 Event detection and recognition is a complex task consisting of multiple sub-tasks of varying difficulty. In this paper, we present a simple, modular approach to event extraction that allows us to experiment with a variety of machine learning methods for these sub-tasks, as well as to evaluate the impact on performance these sub-tasks have on the overall task. 
 </p></blockquote></details>
 
-### 2007 
+## 2007 
 
 <details>
 <summary>1. <a href="https://link.springer.com/chapter/10.1007/978-3-540-72035-5_22">Extracting Violent Events From On-Line News for Ontology Population</a> by<i> Jakub Piskorski, Hristo Tanev, Pinar Oezden Wennerberg</i></summary><blockquote><p align="justify">
 This paper presents nexus, an event extraction system, developed at the Joint Research Center of the European Commission utilized for populating violent incident knowledge bases. It automatically extracts security-related facts from on-line news articles. In particular, the paper focuses on a novel bootstrapping algorithm for weakly supervised acquisition of extraction patterns from clustered news, cluster-level information fusion and pattern specification language. Finally, a preliminary evaluation of nexus on real-world data is given which revealed acceptable precision and a strong application potential.
 </p></blockquote></details>
 
-### 2008
+## 2008
 
 <details>
 <summary>1. <a href="https://www.researchgate.net/publication/255646580_Research_on_Chinese_Event_Extraction">Research on Chinese Event Extraction</a> by<i> Yanyan Zhao, Bing Qin, Wanxiang Che, Ting Liu</i></summary><blockquote><p align="justify">
@@ -279,7 +284,7 @@ Event Extraction is an important research point in the area of Information Extra
 We apply the hypothesis of "One Sense Per Discourse" (Yarowsky, 1995) to information extraction (IE), and extend the scope of "discourse" from one single document to a cluster of topically-related documents. We employ a similar approach to propagate consistent event arguments across sentences and documents. Combining global evidence from related documents with local decisions, we design a simple scheme to conduct cross-document inference for improving the ACE event extraction task 1 . Without using any additional labeled data this new approach obtained 7.6% higher F-Measure in trigger labeling and 6% higher F-Measure in argument labeling over a state-of-the-art IE system which extracts events independently for each sentence.
 </p></blockquote></details>
 
-### 2009
+## 2009
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/W09-1402/">Extracting Complex Biological Events with Rich Graph-Based Feature Sets</a> by<i> Jari Björne, Juho Heimonen, Filip Ginter, Antti Airola, Tapio Pahikkala, Tapio Salakoski</i></summary><blockquote><p align="justify">
@@ -296,7 +301,7 @@ In this paper, we present a Chinese event extraction system. We point out a lang
 In this paper we describe our entry to the BioNLP 2009 Shared Task regarding biomolecular event extraction. Our work can be described by three design decisions: (1) instead of building a pipeline using local classifier technology, we design and learn a joint probabilistic model over events in a sentence; (2) instead of developing specific inference and learning algorithms for our joint model, we apply Markov Logic, a general purpose Statistical Relation Learning language, for this task; (3) we represent events as relational structures over the tokens of a sentence, as opposed to structures that explicitly mention abstract event entities. Our results are competitive: we achieve the 4th best scores for task 1 (in close range to the 3rd place) and the best results for task 2 with a 13 percent point margin.
 </p></blockquote></details>
 
-### 2010 
+## 2010 
 
 <details>
 <summary>1. <a href="https://www.worldscientific.com/doi/abs/10.1142/S0219720010004586">Event Extraction with Complex Event Classification Using Rich Features</a> by<i> MAKOTO MIWA, RUNE SÆTRE, JIN-DONG KIM and JUN'ICHI TSUJII </i></summary><blockquote><p align="justify">
@@ -313,7 +318,7 @@ There has recently been a notable shift in biomedical information extraction (IE
 Event extraction is a particularly challenging type of information extraction (IE). Most current event extraction systems rely on local information at the phrase or sentence level. However, this local context may be insufficient to resolve ambiguities in identifying particular types of events; information from a wider scope can serve to resolve some of these ambiguities. In this paper, we use document level information to improve the performance of ACE event extraction. In contrast to previous work, we do not limit ourselves to information about events of the same type, but rather use information about other types of events to make predictions or resolve ambiguities regarding a given event. We learn such relationships from the training corpus and use them to help predict the occurrence of events and event arguments in a text. Experiments show that we can get 9.0% (absolute) gain in trigger (event) classification, and more than 8% gain for argument (role) classification in ACE event extraction.
 </p></blockquote></details>
 
-### 2011
+## 2011
 
 <details>
 <summary>1. <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-S2-S4">Word sense disambiguation for event trigger word detection in biomedicine</a> by<i> David Martinez , Timothy Baldwin </i></summary><blockquote><p align="justify">
@@ -368,7 +373,7 @@ We present a joint model for biomedical event extraction and apply it to four tr
 In this paper, we present a classification-based approach towards single-slot as well as multi-slot information extraction (IE). For single-slot IE, we worked on the domain of Seminar Announcements, where each document contains information on only one seminar. For multi-slot IE, we worked on the domain of Management Succession. For this domain, we restrict ourselves to extracting information sentence by sentence, in the same way as (Soderland 1999). Each sentence can contain information on several management succession events. By using a classification approach based on a maximum entropy framework, our system achieves higher accuracy than the best previously published results in both domains.
 </p></blockquote></details>
 
-### 2012 
+## 2012 
  
 
 <details>
@@ -401,7 +406,7 @@ Compared to the amount of research that has been done on English event extractio
 This  paper  addresses  the  extraction of  eventrecords from documents that describe multi-ple  events.   Specifically,  we  aim  to  identify the fields of information contained in a document and aggregate together those fields that describe  the  same  event.   To  exploit  the  inherent  connections  between  field  extraction and event identification, we propose to model them  jointly.   Our  model  is  novel  in  that  it integrates information from separate sequential  models,  using  global  potentials  that  encourage  the  extracted  event  records  to  have desired  properties. While  the  model  contains high-order potentials,  efficient approximate  inference  can  be  performed with  dual decomposition. We experiment with two datasets  that  consist  of  newspaper  articles  describing multiple terrorism events,  and show that our model substantially outperforms tra-ditional pipeline models.
 </p></blockquote></details>
 
-### 2013 
+## 2013 
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/W13-2017/">A Hybrid approach for biomedical event extraction</a> by<i> Xuan Quang Pham, Minh Quang Le, Bao Quoc Ho </i></summary><blockquote><p align="justify">
@@ -429,7 +434,7 @@ Biomedical event extraction from articles as become a popular research topic dri
 </p></blockquote></details>
 
 
-### 2014
+## 2014
 
 <details>
 <summary>1. <a href="https://www.hindawi.com/journals/bmri/2014/205239/">A Novel Feature Selection Strategy for Enhanced Biomedical Event Extraction Using the Turku System</a> by<i> Jingbo Xia, Alex Chengyu Fang, and Xing Zhang</i></summary><blockquote><p align="justify">
@@ -467,7 +472,7 @@ Event extraction generally suffers from the data sparseness problem. In this pap
 
 
 
-### 2015 
+## 2015 
 
 
 
@@ -512,7 +517,7 @@ Social media has attracted attention because of its potential for extraction of 
 The task of event trigger labeling is typically addressed in the standard supervised setting: triggers for each target event type are annotated as training data, based on annotation guidelines. We propose an alternative approach, which takes the example trigger terms mentioned in the guidelines as seeds, and then applies an eventindependent similarity-based classiﬁer for trigger labeling. This way we can skip manual annotation for new event types, while requiring only minimal annotated training data for few example events at system setup. Our method is evaluated on the ACE-2005 dataset, achieving 5.7\% F1 improvement over a state-of-the-art supervised system which uses the full training data.
 </p></blockquote></details>
 
-### 2016 
+## 2016 
 
  
 
@@ -549,7 +554,7 @@ Event extraction is a difficult information extraction task. Li et al. (2014) ex
 Events and entities are closely related; entities are often actors or participants in events and events without entities are uncommon. The interpretation of events and entities is highly contextually dependent. Existing work in information extraction typically models events separately from entities, and performs inference at the sentence level, ignoring the rest of the document. In this paper, we propose a novel approach that models the dependencies among variables of events, entities, and their relations, and performs joint inference of these variables across a document. The goal is to enable access to document-level contextual information and facilitate context-aware predictions. We demonstrate that our approach substantially outperforms the state-of-the-art methods for event extraction as well as a strong baseline for entity extraction.
 </p></blockquote></details>
 
-### 2020 
+## 2020 
 
 <details>
 <summary>1. <a href="https://www.tandfonline.com/doi/full/10.1080/24751839.2020.1763007">Event detection based on open information extraction and ontology</a> by<i> Sihem Sahnoun, Samir Elloumi, Sadok Ben Yahia</i></summary><blockquote><p align="justify">
@@ -563,7 +568,7 @@ In information extraction, event extraction is one of the types that extract the
 
 ## Deep learning 
 [:arrow_up:](#table-of-contents)
-### 2015 
+## 2015 
 
 
 
@@ -584,7 +589,7 @@ Traditional approaches to the task of ACE event extraction primarily rely on ela
 Traditional approaches to the task of ACE event extraction primarily rely on elaborately designed features and complicated natural language processing (NLP) tools. These traditional approaches lack generalization, take a large amount of human effort and are prone to error propagation and data sparsity problems. This paper proposes a novel event-extraction method, which aims to automatically extract lexical-level and sentence-level features without using complicated NLP tools. We introduce a word-representation model to capture meaningful semantic regularities for words and adopt a framework based on a convolutional neural network (CNN) to capture sentence-level clues. However, CNN can only capture the most important information in a sentence and may miss valuable facts when considering multiple-event sentences. We propose a dynamic multi-pooling convolutional neural network (DMCNN), which uses a dynamic multi-pooling layer according to event triggers and arguments, to reserve more crucial information. The experimental results show that our approach significantly outperforms other state-of-the-art methods.
 </p></blockquote></details>
 
-### 2016 
+## 2016 
 
  
 
@@ -642,7 +647,7 @@ Chinese event extraction is a challenging task in information extraction. Previo
 Event detection remains a challenge because of the difficulty of encoding the word semantics in various contexts. Previous approaches have heavily depended on language-specific knowledge and preexisting natural language processing tools. However, not all languages have such resources and tools available compared with English language. A more promising approach is to automatically learn effective features from data, without relying on language-specific resources. In this study, we develop a language-independent neural network to capture both sequence and chunk information from specific contexts and use them to train an event detector for multiple languages without any manually encoded features. Experiments show that our approach can achieve robust, efficient and accurate results for various languages. In the ACE 2005 English event detection task, our approach achieved a 73.4% F-score with an average of 3.0% absolute improvement compared with state-of-the-art. Additionally, our experimental results are competitive for Chinese and Spanish.
 </p></blockquote></details>
 
-### 2017 
+## 2017 
 
  
 
@@ -696,7 +701,7 @@ In this paper, we focus on improving Event Extraction (EE) by incorporating visu
 </p></blockquote></details>
 
 
-### 2018 
+## 2018 
 
  
 
@@ -861,7 +866,7 @@ Recently, end-to-end models based on recurrent neural networks (RNN) have gained
 Neural Methods for Event Extraction thesis
 </p></blockquote></details>
 
-### 2019
+## 2019
 
  
 
@@ -1291,7 +1296,7 @@ Biomedical events represent complex, graphical, and semantically rich interactio
 
 ## Semi-supervised learning 
 [:arrow_up:](#table-of-contents)
-### 2009
+## 2009
 
 
 
@@ -1300,7 +1305,7 @@ Biomedical events represent complex, graphical, and semantically rich interactio
 This paper proposes a new bootstrapping framework using cross-lingual information projection. We demonstrate that this framework is particularly effective for a challenging NLP task which is situated at the end of a pipeline and thus suffers from the errors propagated from up- stream processing and has low-performance baseline. Using Chinese event extraction as a case study and bitexts as a new source of information, we present three bootstrapping techniques. We first conclude that the standard mono-lingual bootstrapping approach is not so effective. Then we exploit a second approach that potentially benefits from the extra information captured by an English event extraction system and projected into Chinese. Such a cross-lingual scheme produces significant performance gain. Finally we show that the combination of mono-lingual and cross-lingual information in bootstrapping can further enhance the performance. Ultimately this new framework obtained 10.1% relative improvement in trigger labeling (F-measure) and 9.5% relative improvement in argument-labeling.
 </p></blockquote></details>
 
-### 2011
+## 2011
 
  
 
@@ -1324,7 +1329,7 @@ Event extraction involves the identification of instances of a type of event, al
 We present a novel method for record extraction from social streams such as Twitter. Unlike typical extraction setups, these environments are characterized by short, one sentence messages with heavily colloquial speech. To further complicate matters, individual messages may not express the full relation to be uncovered, as is often assumed in extraction tasks. We develop a graphical model that addresses these problems by learning a latent set of records and a record-message alignment simultaneously; the output of our model is a set of canonical records, the values of which are consistent with aligned messages. We demonstrate that our approach is able to accurately induce event records from Twitter messages, evaluated against events from a local city guide. Our method achieves significant error reduction over baseline methods.
 </p></blockquote></details>
 
-### 2013 
+## 2013 
 
 
 <details>
@@ -1363,7 +1368,7 @@ Conclusions
 The proposed method allows the training of a wide-coverage, state-of-the-art event extraction system from multiple corpora with partial semantic annotation overlap. The resulting single model makes broad-coverage extraction straightforward in practice by removing the need to either select a subset of compatible corpora or semantic types, or to merge results from several models trained on different individual corpora. Multi-corpus learning also allows annotation efforts to focus on covering additional semantic types, rather than aiming for exhaustive coverage in any single annotation effort, or extending the coverage of semantic types annotated in existing corpora.
 </p></blockquote></details>
 
-### 2014
+## 2014
 
  
 
@@ -1379,7 +1384,7 @@ Distant supervision is a successful paradigm that gathers training data for info
 Event extraction generally suffers from the data sparseness problem. In this paper, we address this problem by utilizing the labeled data from two different languages. As a preliminary study, we mainly focus on the subtask of trigger type determination in event extraction. To make the training data in different languages help each other, we propose a uniform text representation with bilingual features to represent the samples and handle the difficulty of locating the triggers in the translated text from both monolingual and bilingual perspectives. Empirical studies demonstrate the effectiveness of the proposed approach to bilingual classification on trigger type determination.
 </p></blockquote></details>
 
-### 2015 
+## 2015 
 
   
 
@@ -1388,7 +1393,7 @@ Event extraction generally suffers from the data sparseness problem. In this pap
 In this paper, we describe our system for the TAC KBP 2015 Event track. We focus in particular on development of multilingual event extraction through the combination of language-dependent and languageindependent features. Our system specifically handles texts in both English and Chinese, but is designed in a manner to be extendable to new languages. Our experiments on the ACE2005 corpus show promising results for future development. 
 </p></blockquote></details>
 
-### 2016
+## 2016
 
  
 
@@ -1422,7 +1427,7 @@ Event extraction has become one of the most important topics in information extr
 Adverse drug events (ADEs) are medical complications co-occurring with a period of drug usage. Identiﬁcation of ADEs is a primary way of evaluating available quality of care. As more social media users begin discussing their drug experiences online, public data becomes available for researchers to expand existing electronic ADE reporting systems, though non-standard language inhibits ease of analysis. In this study, portions of a new corpus of approximately 160,000 tweets were used to create a lexicon-driven ADE detection system using semi-supervised, pattern-based bootstrapping. This method was able to identify misspellings, slang terms, and other non-standard language features of social media data to drive a competitive ADE detection system.
 </p></blockquote></details>
 
-### 2017 
+## 2017 
 
  
 
@@ -1437,7 +1442,7 @@ Modern models of event extraction for tasks like ACE are based on supervised lea
 The task of event extraction has long been investigated in a supervised learning paradigm, which is bound by the number and the quality of the training instances. Existing training data must be manually generated through a combination of expert domain knowledge and extensive human involvement. However, due to drastic efforts required in annotating text, the resultant datasets are usually small, which severally affects the quality of the learned model, making it hard to generalize. Our work develops an automatic approach for generating training data for event extraction. Our approach allows us to scale up event extraction training instances from thousands to hundreds of thousands, and it does this at a much lower cost than a manual approach. We achieve this by employing distant supervision to automatically create event annotations from unlabelled text using existing structured knowledge bases or tables.We then develop a neural network model with post inference to transfer the knowledge extracted from structured knowledge bases to automatically annotate typed events with corresponding arguments in text.We evaluate our approach by using the knowledge extracted from Freebase to label texts from Wikipedia articles. Experimental results show that our approach can generate a large number of high quality training instances. We show that this large volume of training data not only leads to a better event extractor, but also allows us to detect multiple typed events. 
 </p></blockquote></details>
 
-### 2018
+## 2018
 
  
 
@@ -1460,7 +1465,7 @@ Most previous supervised event extraction methods have relied on features derive
 This paper introduces open-domain event detection, a new event detection paradigm to address issues of prior work on restricted domains and event annotation. The goal is to detect all kinds of events regardless of domains. Given the absence of training data, we propose a distant supervision method that is able to generate high-quality training data. Using a manually annotated event corpus as gold standard, our experiments show that despite no direct supervision, the model outperforms supervised models. This result indicates that the distant supervision enables robust event detection in various domains, while obviating the need for human annotation of events.
 </p></blockquote></details>
 
-### 2019
+## 2019
 
 
 
@@ -1503,7 +1508,7 @@ Extraction of financial and economic events from text has previously been done m
 </p></blockquote></details>
 
 
-### 2020
+## 2020
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/2020.emnlp-main.430">Weakly Supervised Subevent Knowledge Acquisition  </a> by<i> Wenlin Yao, Zeyu Dai, Maitreyi Ramaswamy, Bonan Min, Ruihong Huang</i> (<a href="https://github.com/wenlinyao/EMNLP20-SubeventAcquisition">Github</a>)</summary><blockquote><p align="justify">
@@ -1517,7 +1522,7 @@ Most previous event extraction studies assume a set of target event types and co
 
 ## Unsupervised learning
 [:arrow_up:](#table-of-contents)
-### 1998
+## 1998
 
 
 
@@ -1527,7 +1532,7 @@ This paper investigates the use and extension of text retrieval and clustering t
 query-driven retrieval. We also found that temporal distribution patterns of document clusters provide useful information for improvement in both retrospective detection and on-line detection of novel events. In an evaluation using manually labelled events to judge the system-detected events, we obtained a result of 82% in the F1 measure for retrospective detection, and a F1 value of 42% for on-line detection
 </p></blockquote></details>
 
-### 2001
+## 2001
 
 
 
@@ -1544,14 +1549,14 @@ Retrospective news event detection (RED) is defined as the discovery of previous
 </p></blockquote></details>
 
 
-### 2003 
+## 2003 
 
 <details>
 <summary>1. <a href="https://www.sciencedirect.com/science/article/pii/S0957417403000629">Ontology-based fuzzy event extraction agent for Chinese e-news summarization</a> by<i> Chang-Shing Lee, Yea-Juan Chen, Zhi-Wei Jian</i></summary><blockquote><p align="justify">
 An Ontology-based Fuzzy Event Extraction (OFEE) agent for Chinese e-news summarization is proposed in this article. The OFEE agent contains Retrieval Agent (RA), Document Processing Agent (DPA) and Fuzzy Inference Agent (FIA) to perform the event extraction for Chinese e-news summarization. First, RA automatically retrieves Internet e-news periodically, stores them into the e-news repository, and sends them to DPA for document processing. Then, the DPA will utilize the Chinese Part-of-speech (POS) tagger provided by Chinese knowledge information processing group to process the retrieved e-news and filter the Chinese term set by Chinese term filter. Next, the FIA and Event Ontology Filter (EOF) extract the e-news event ontology based on the Chinese term set and domain ontology. Finally, the Summarization Agent (SA) will summarize the e-news by the extracted-event ontology. By the simulation, the proposed method can summarize the Chinese weather e-news effectively.
 </p></blockquote></details>
 
-### 2004
+## 2004
 
  
 
@@ -1562,7 +1567,7 @@ With the overwhelming volume of online news available today, there is an increas
  We formally define the novel problem, suggest evaluation metrics and present a few techniques for solving the problem. Besides the standard word based features, our approaches take into account novel features such as temporal locality of stories for event recognition and time-ordering for capturing dependencies. Our experiments on a manually labeled data sets show that our models effectively identify the events and capture dependencies among them. 
 </p></blockquote></details>
 
-### 2005
+## 2005
 
   
 
@@ -1572,7 +1577,7 @@ News event detection is the task of discovering relevant, yet previously unrepor
 </p></blockquote></details>
 
 
-### 2012
+## 2012
 
 
 
@@ -1586,7 +1591,7 @@ In this paper, we extend current state-of-the-art research on unsupervised acqui
 This  paper  presents  a  novel  sequence  labeling model based on the latent-variable semi-Markov conditional random fields for jointly extracting argument roles of events from texts. The model takes in coarse mention and type information and predicts argument roles for a given event template. This paper addresses the event extraction problem in a primarily  unsupervised  setting, where no labeled training instances are available. Our key contribution is a novel learning framework called structured preference modeling (PM), that  allows  arbitrary  preference to be assigned to certain structures during the learning procedure.  We establish and discuss connections between this framework and other existing works. We show empirically that the structured preferences are crucial to the success of our task. Our  model,  trained  without  annotated  data  and  with  a  small  number of structured preferences, yields performance competitive to some baseline supervised  approaches.
 </p></blockquote></details>
 
-### 2014
+## 2014
 
 
 <details>
@@ -1599,7 +1604,7 @@ Structured machine-readable representations of news articles can radically chang
 Abstractive text summarization of news requires a way of representing events, such as a collection of pattern clusters in which every cluster represents an event (e.g., marriage) and every pattern in the cluster is a way of expressing the event (e.g., X married Y, X and Y tied the knot). We compare three ways of extracting event patterns: heuristics-based, compression based and memory-based. While the former has been used previously in multidocument abstraction, the latter two have never been used for this task. Compared with the ﬁrst two techniques, the memory based method allows for generating signiﬁcantly more grammatical and informative sentences, at the cost of searching a vast space of hundreds of millions of parse trees of known grammatical utterances. To this end, we introduce a data structure and a search method that make it possible to efﬁciently extrapolate from every sentence the parse sub-trees that match against any of the stored utterances.
 </p></blockquote></details>
 
-### 2016 
+## 2016 
 
  
 
@@ -1617,28 +1622,28 @@ Event extraction from texts aims to detect structured information such as what h
 ## Event coreference
 [:arrow_up:](#table-of-contents)
 
-### 1997
+## 1997
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/W97-1311/">Event coreference for information extraction</a> by<i> Kevin Humphreys, Robert Gaizauskas, Saliha Azzam</i></summary><blockquote><p align="justify">
 We propose a general approach for performing event coreference and for constructing complex event representations, such as those required for information extraction tasks. Our approach is based on a representation which allows a tight coupling between world or conceptual modelling and discourse modelling. The rep- resentation and the coreference mechanism are fully implemented within the LaSIE information extraction system where the mechanism is used for both object (noun phrase) and event coreference resolution.
 </p></blockquote></details>
 
-### 2007
+## 2007
 
 <details>
 <summary>1. <a href="https://ieeexplore.ieee.org/document/4338380">Unrestricted Coreference: Identifying Entities and Events in OntoNotes</a> by<i>  Sameer S. Pradhan , Lance Ramshaw , Ralph Weischedel , Jessica MacBride , Linnea Micciulla </i></summary><blockquote><p align="justify">
 Most research in the field of anaphora or coreference detection has been limited to noun phrase coreference, usually on a restricted set of entities, such as ACE entities. In part, this has been due to the lack of corpus resources tagged with general anaphoric coreference. The OntoNotes project is creating a large-scale, accurate corpus for general anaphoric coreference that covers entities and events not limited to noun phrases or a limited set of entity types. The coreference layer in OntoNotes constitutes one part of a multi-layer, integrated annotation of shallow semantic structure in text. This paper presents an initial model for unrestricted coreference based on this data that uses a machine learning architecture with state-of-the-art features. Significant improvements can be expected from using such cross-layer information for training predictive models. This paper describes the coreference annotation in OntoNotes, presents the baseline model, and provides an analysis of the contribution of this new resource in the context of recent MUC and ACE results.
 </p></blockquote></details>
 
-### 2008
+## 2008
 
 <details>
 <summary>1. <a href="http://www.lrec-conf.org/proceedings/lrec2008/pdf/734_paper.pdf">A Linguistic Resource for Discovering Event Structures and Resolving Event Coreference</a> by<i> Cosmin Adrian Bejan, Sanda M. Harabagiu</i></summary><blockquote><p align="justify">
 In this paper, we present a linguistic resource that annotates event structures in texts. We consider an event structure as a collection of events that interact with each other in a given situation. We interpret the inter actions between events as event relations. In this regard, we propose and annotate a set of six relations that best capture the concep t of event structure. These relations are: subevent, reason, purpose, enablement, precedence and related. A document from this resource can encode multiple event structures and an event structure can be described across multiple documents. In order to unify event structures, we also annotate inter- and intra-document event coreference. Moreover, we provide methodologies for automatic discovery of event structures from texts. First, we group the events that constitute an event structure into event clusters and then, we use supervised lear ning frameworks to classify the relations that exist between events from the same cluster.
 </p></blockquote></details>
 
-### 2009
+## 2009
 
 <details>
 <summary>1. <a href="https://papers.nips.cc/paper/3637-nonparametric-bayesian-models-for-unsupervised-event-coreference-resolution">Non parametric Bayesian Models for Unsupervised Event Coreference Resolution</a> by<i> Cosmin Adrian Bejan, Matthew Titsworth, Andrew Hickl, Sanda M. Harabagiu</i></summary><blockquote><p align="justify">
@@ -1655,14 +1660,14 @@ In this paper, we address the problem of event coreference resolution as specifi
 In past years, there has been substantial work on the problem of entity coreference resolution whereas much less attention has been paid to event coreference resolution. Starting with some motivating examples, we formally state the problem of event coreference resolution in the ACE program, present an agglomerative clustering algorithm for the task, explore the feature impact in the event coreference model and compare three evaluation metrics that were previously adopted in entity coreference resolution: MUC F-Measure, B-Cubed F-Measure and ECM F-Measure.
 </p></blockquote></details>
 
-### 2010
+## 2010
 
 <details>
 <summary>1. <a href="https://dl.acm.org/doi/10.5555/1858681.1858824">Unsupervised event coreference resolution with rich linguistic features</a> by<i> Cosmin Adrian Bejan, Sanda M. Harabagiu</i></summary><blockquote><p align="justify">
 This paper examines how a new class of nonparametric Bayesian models can be effectively applied to an open-domain event coreference task. Designed with the purpose of clustering complex linguistic objects, these models consider a potentially infinite number of features and categorical outcomes. The evaluation performed for solving both within- and cross-document event coreference shows significant improvements of the models when compared against two baselines for this task.
 </p></blockquote></details>
 
-### 2011
+## 2011
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/I11-1012/">A Unified Event Coreference Resolution by Integrating Multiple Resolvers</a> by<i> Bin Chen, Jian Su, Sinno Jialin Pan, Chew Lim Tan</i></summary><blockquote><p align="justify">
@@ -1670,7 +1675,7 @@ Event coreference is an important and complicated task in cascaded event templat
 </p></blockquote></details>
 
 
-### 2012
+## 2012
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/D12-1045/">Joint Entity and Event Coreference Resolution across Documents</a> by<i> Heeyoung Lee, Marta Recasens, Angel Chang, Mihai Surdeanu, Dan Jurafsky</i></summary><blockquote><p align="justify">
@@ -1687,13 +1692,13 @@ Event co-reference is the process of identifying descriptions of the same event 
 To extract participants of an event instance, it is necessary to identify all the sentences that describe the event instance. The set of all sentences referring to the same event instance are said to be corefering each other. Our proposed approach formulates the event coreference resolution as a graph based clustering model. It identifies the corefering sentences using minimum cut (mincut) based on similarity score between each pair of sentences at various levels such as trigger word similarity, time stamp similarity, entity similarity and semantic similarity. It achieves good B-Cubed F-measure score with some loss in recall.
 </p></blockquote></details>
 
-### 2013 
+## 2013 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/P13-2083/">A Structured Distributional Semantic Model for Event Co-reference</a> by<i> Kartik Goyal, Sujay Kumar Jauhar, Huiying Li, Mrinmaya Sachan, Shashank Srivastava, Eduard Hovy</i></summary><blockquote><p align="justify">
 In this paper we present a novel approach to modelling distributional semantics that represents meaning as distributions over relations in syntactic neighborhoods. We argue that our model approximates meaning in compositional conﬁgurations more effectively than standard distributional vectors or bag-of-words models. We test our hypothesis on the problem of judging event coreferentiality, which involves compositional interactions in the predicate-argument structure of sentences, and demonstrate that our model outperforms both state-of-the-art window-based word embeddings as well as simple approaches to compositional semantics previously employed in the literature.
 </p></blockquote></details>
 
-### 2014 
+## 2014 
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/W14-2910/">Evaluation for Partial Event Coreference</a> by<i> Jun Araki, Eduard Hovy, Teruko Mitamura</i></summary><blockquote><p align="justify">
@@ -1721,7 +1726,7 @@ In this paper we examine the representativeness of the EventCorefBank (ECB) (Bej
 Event coreference is an important task for full text analysis. However, previous work uses a variety of approaches, sources and evaluation, making the literature confusing and the results incommensurate. We provide a description of the differences to facilitate future research. Second, we present a supervised method for event coreference resolution that uses a rich feature set and propagates information alternatively between events and their arguments, adapting appropriately for each type of argument.
 </p></blockquote></details>
 
-### 2015 
+## 2015 
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/N15-1116/">Chinese Event Coreference Resolution: An Unsupervised Probabilistic Model Rivaling Supervised Resolvers</a> by<i> Chen Chen, Vincent Ng</i></summary><blockquote><p align="justify">
@@ -1743,7 +1748,7 @@ We present a novel hierarchical distance-dependent Bayesian model for event core
 In this paper we focus on a new problem of event coreference resolution across television news videos. Based on the observation that the contents from multiple data modalities are complementary, we develop a novel approach to jointly encode effective features from both closed captions and video key frames. Experiment results demonstrate that visual features provided 7.2\% absolute F-score gain on stateof-the-art text based event extraction and coreference resolution.
 </p></blockquote></details>
 
-### 2016
+## 2016
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/C16-1308/">Joint Inference for Event Coreference Resolution</a> by<i> Jing Lu, Deepak Venugopal, Vibhav Gogate, Vincent Ng</i></summary><blockquote><p align="justify">
@@ -1780,7 +1785,7 @@ An important aspect of natural language understanding involves recognizing and c
 We propose a brand new “Liberal” Event Extraction paradigm to extract events and discover event schemas from any input corpus simultaneously. We incorporate symbolic (e.g., Abstract Meaning Representation) and distributional semantics to detect and represent event structures and adopt a joint typing framework to simultaneously extract event types and argument roles and discover an event schema. Experiments on general and speciﬁc domains demonstrate that this framework can construct high-quality schemas with many event and argument role types, covering a high proportion of event types and argument roles in manually deﬁned schemas. We show that extraction performance using discovered schemas is comparable to supervised models trained from a large amount of data labeled according to predeﬁned event types. The extraction quality of new event types is also promising.
 </p></blockquote></details>
 
-### 2017
+## 2017
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/D17-1226/">Event Coreference Resolution by Iteratively Unfolding Inter-dependencies among Events</a> by<i> Prafulla Kumar Choubey, Ruihong Huang</i></summary><blockquote><p align="justify">
@@ -1860,28 +1865,28 @@ Information extraction (IE) is a challenging task, particularly when dealing wit
 [:arrow_up:](#table-of-contents)
 
 
-### 2009
+## 2009
 
 <details>
 <summary>1. <a href="http://portal.acm.org/citation.cfm?doid=1667583.1667697">Predicting unknown time arguments based on cross-event propagation</a> by<i> Gupta, Prashant and Ji, Heng </i></summary><blockquote><p align="justify">
 Many events in news articles don’t include time arguments. This paper describes two methods, one based on rules and the other based on statistical learning, to predict the unknown time argument for an event by the propagation from its related events. The results are promising – the rule based approach was able to correctly predict 74\% of the unknown event time arguments with 70\% precision.
 </p></blockquote></details>
 
-### 2011
+## 2011
 
 <details>
 <summary>1. <a href="http://dl.acm.org/citation.cfm?doid=1978942.1978975">Twitinfo: aggregating and visualizing microblogs for event exploration</a> by<i> Marcus, Adam and Bernstein, Michael S. and Badar, Osama and Karger, David R. and Madden, Samuel and Miller, Robert C. </i></summary><blockquote><p align="justify">
 Microblogs are a tremendous repository of user-generated content about world events. However, for people trying to understand events by querying services like Twitter, a chronological log of posts makes it very difﬁcult to get a detailed understanding of an event. In this paper, we present TwitInfo, a system for visualizing and summarizing events on Twitter. TwitInfo allows users to browse a large collection of tweets using a timeline-based display that highlights peaks of high tweet activity. A novel streaming algorithm automatically discovers these peaks and labels them meaningfully using text from the tweets. Users can drill down to subevents, and explore further via geolocation, sentiment, and popular URLs. We contribute a recall-normalized aggregate sentiment visualization to produce more honest sentiment overviews. An evaluation of the system revealed that users were able to reconstruct meaningful summaries of events in a small amount of time. An interview with a Pulitzer Prize-winning journalist suggested that the system would be especially useful for understanding a long-running event and for identifying eyewitnesses. Quantitatively, our system can identify 80-100\% of manually labeled peaks, facilitating a relatively complete view of each event studied.
 </p></blockquote></details>
 
-### 2013
+## 2013
 
 <details>
 <summary>1. <a href="http://dl.acm.org/citation.cfm?doid=2487575.2487718">EventCube: multi-dimensional search and mining of structured and text data</a> by<i> Tao, Fangbo and Ji, Heng and Kanade, Rucha and Kao, Anne and Li, Qi and Li, Yanen and Lin, Cindy and Liu, Jialu and Oza, Nikunj and Srivastava, Ashok and Tjoelker, Rod and Lei, Kin Hou and Wang, Chi and Zhang, Duo and Zhao, Bo and Han, Jiawei and Zhai, Chengxiang and Cheng, Xiao and Danilevsky, Marina and Desai, Nihit and Ding, Bolin and Ge, Jing Ge </i></summary><blockquote><p align="justify">
 A large portion of real world data are either text data or structured (e.g., relational) data. Moreover, such data are often linked together (e.g., structured speciﬁcation of products linking with the corresponding product descriptions and customer comments). Even for text data such as news data, typed entities can be extracted with entity extraction tools. The EventCube project constructs TextCube and TopicCube from interconnected structured and text data (or from text data via entity extraction and dimension building), and performs multidimensional search and analysis on such datasets, in an informative, powerful, and userfriendly manner. This proposed EventCube demo will show the power of the system not only on the originally designed ASRS (Aviation Safety Report System) data sets, but also on news datasets, collected from multiple news agencies. The system has high potential to be extended in many powerful ways and serve as a general platform for search, OLAP (online analytical processing) and data mining on integrated text and structured data. After the system demo in the conference (if accepted), the system will be put on the web for public access and evaluation.
 </p></blockquote></details>
 
-### 2014
+## 2014
 
 <details>
 <summary>1. <a href="https://www.aclweb.org/anthology/P14-2082/">An Annotation Framework for Dense Event Ordering</a> by<i> Taylor Cassidy, Bill McDowell, Nathanael Chambers, Steven Bethard</i></summary><blockquote><p align="justify">
@@ -1898,7 +1903,7 @@ Cross-narrative temporal ordering of medical events is essential to the task of 
 We propose a supervised method of extracting event causalities like conduct slash-and-burn agriculture→exacerbate desertiﬁcation from the web using semantic relation (between nouns), context, and association features. Experiments show that our method outperforms baselines that are based on state-of-the-art methods. We also propose methods of generating future scenarios like conduct slash-and-burn agriculture→exacerbate desertiﬁcation→increase Asian dust (from China)→asthma gets worse. Experiments show that we can generate 50,000 scenarios with 68\% precision. We also generated a scenario deforestation continues→global warming worsens→sea temperatures rise→vibrio parahaemolyticus fouls (water), which is written in no document in our input web corpus crawled in 2007. But the vibrio risk due to global warming was observed in Baker-Austin et al. (2013). Thus, we “predicted” the future event sequence in a sense.
 </p></blockquote></details>
 
-### 2015
+## 2015
 
 <details>
 <summary>1. <a href="http://aclweb.org/anthology/P15-1019">Generative Event Schema Induction with Entity Disambiguation</a> by<i> Nguyen, Kiem-Hieu and Tannier, Xavier and Ferret, Olivier and Besançon, Romaric </i></summary><blockquote><p align="justify">
@@ -1910,7 +1915,7 @@ This paper presents a generative model to event schema induction. Previous metho
 To better organize and understand online news information, we propose Storybase1, a knowledge base for news events that builds upon Wikipedia current events and daily Web news. It ﬁrst constructs stories and their timelines based on Wikipedia current events and then detects and links daily news to enrich those Wikipedia stories with more comprehensive events. We encode events and develop efﬁcient event clustering and chaining techniques in an event space. We demonstrate Storybase with a news events search engine that helps ﬁnd historical and ongoing news stories and inspect their dynamic timelines.
 </p></blockquote></details>
 
-### 2016
+## 2016
 
 <details>
 <summary>1. <a href="http://aclweb.org/anthology/W16-1004">A Comparison of Event Representations in DEFT</a> by<i> Ann Bies , Zhiyi Song, Jeremy Getman, Joe Ellis, Justin Mott, Stephanie Strassel,
@@ -1938,7 +1943,7 @@ Knowledge bases, which consist of a collection of entities, attributes, and the 
 Today’s extraction of temporal information for events heavily depends on annotated temporal links. These so called TLINKs capture the relation between pairs of event mentions and time expressions. One problem is that the number of possible TLINKs grows quadratic with the number of event mentions, therefore most annotation studies concentrate on links for mentions in the same or in adjacent sentences. However, as our annotation study shows, this restriction results for 58\% of the event mentions in a less precise information when the event took place.
 </p></blockquote></details>
 
-### 2017
+## 2017
 
 <details>
 <summary>1. <a href="http://aclweb.org/anthology/P17-2101">Determining Whether and When People Participate in the Events They Tweet About</a> by<i> Sanagavarapu, Krishna Chaitanya and Vempala, Alakananda and Blanco, Eduardo </i></summary><blockquote><p align="justify">
@@ -1950,7 +1955,7 @@ This paper describes an approach to determine whether people participate in the 
 In this paper we describe a new lexical semantic resource, The Rich Event On-tology, which provides an independent conceptual backbone to unify existing semantic role labeling (SRL) schemas and augment them with event-to-event causal and temporal relations. By unifying the FrameNet, VerbNet, Automatic Content Extraction, and Rich Entities, Relations and Events resources, the ontology serves as a shared hub for the disparate annotation schemas and therefore enables the combination of SRL training data into a larger, more diverse corpus. By adding temporal and causal relational information not found in any of the independent resources, the ontology facilitates reasoning on and across documents, revealing relationships between events that come together in temporal and causal chains to build more complex scenarios. We envision the open resource serving as a valuable tool for both moving from the ontology to text to query for event types and scenarios of interest, and for moving from text to the ontology to access interpretations of events using the combined semantic information housed there.
 </p></blockquote></details>
 
-### Linguistics
+## Linguistics
 [:arrow_up:](#table-of-contents)
 
 1. <a href="http://semantics.uchicago.edu/scalarchange/vendler57.pdf">Verbs and times</a> by<i> Zeno Vendler </i>
