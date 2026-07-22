@@ -1,26 +1,25 @@
-# Event Extraction papers
+# Event Extraction Papers
 
-This repository contains resources for Natural Language Processing (NLP) with a focus on the task of Event Extraction.
+A curated collection of research on Event Extraction (EE), including
+event detection, event argument extraction, document-level extraction,
+generative and LLM-based methods, multilingual and multimodal EE,
+event coreference, datasets, benchmarks, and related resources.
 
-# Table of Contents
+## Table of Contents
 
-<details>
-
-<summary><b>Expand Table of Contents</b></summary><blockquote><p align="justify">
-
-- [Pattern Matching](#pattern-matching)
-- [Machine Learning](#machine-learning)
-- [Deep Learning](#deep-learning)
-- [Semi-supervised Learning](#semi-supervised-learning)
-- [Unsupervised Learning](#unsupervised-learning)
-- [Event Coreference](#event-coreference)
-- [Surveys](#surveys)
-- [Others](#others)
-- [Linguistics](#linguistics)
-- [Data](#data)
-- [Tools and Repos](#tools-and-repos)
-- [Other lists](#other-lists)
-</p></blockquote></details>
+- [Foundations: Rules and Pattern Learning](#foundations-rules-and-pattern-learning)
+- [Statistical and Structured Learning](#statistical-and-structured-learning)
+- [Neural Event Extraction](#neural-event-extraction)
+- [Generative, Prompt-based and LLM Event Extraction](#generative-prompt-based-and-llm-event-extraction)
+- [Document-level and Multi-document Event Extraction](#document-level-and-multi-document-event-extraction)
+- [Few-shot, Zero-shot and Low-resource Event Extraction](#few-shot-zero-shot-and-low-resource-event-extraction)
+- [Multilingual and Cross-lingual Event Extraction](#multilingual-and-cross-lingual-event-extraction)
+- [Multimodal Event Extraction](#multimodal-event-extraction)
+- [Open-domain Event Extraction and Schema Induction](#open-domain-event-extraction-and-schema-induction)
+- [Event Coreference and Event Relations](#event-coreference-and-event-relations)
+- [Surveys and Benchmarks](#surveys-and-benchmarks)
+- [Datasets](#datasets)
+- [Tools and Repositories](#tools-and-repositories)
 
 ---
 
